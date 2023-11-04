@@ -1,0 +1,501 @@
+/* All */
+* {
+    box-sizing: border-box;
+ }
+ 
+ 
+ /* Body */
+ body {
+     margin: 0;
+     font-family: 'Merriweather', serif;
+ }
+ 
+ /* H */
+ h1 {
+     font-size: 3.5em;
+ }
+ 
+ h2 {
+     font-size: 2.7em;
+ }
+ 
+ h3 {
+     font-size: 2em;
+ }
+ 
+ p {
+     font-size: 1.25em;
+ }
+ 
+ ul {
+     list-style: none;
+ }
+ 
+ /* Button */
+ button {
+     font-size: 1.5;
+     font-weight: bold;
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: 1.5px solid rgba(0, 0, 0, 0.5);
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     color: #fff;
+     background-color: #C61515;
+ }
+ 
+ button:hover {
+     background-color: #9E0202;
+ }
+ 
+ /* Container */
+ .container {
+     max-width: 1400px;
+     margin: auto;
+ }
+ 
+ /* Header */
+ header {
+     background-color: #141617;
+ }
+ 
+ header .logo {
+     margin: 0;
+     padding: 25px 30px;
+ }
+ 
+ /* Nav */
+ .nav-list {
+     list-style-type: none;
+     display: flex;
+     gap: 1rem;
+ }
+ 
+ .nav-list li a {
+     text-decoration: none;
+     color: #141617;
+ }
+ 
+ .open-menu,
+ .close-menu {
+     display: none;
+ }
+ 
+     .open-menu,
+     .close-menu {
+         display: block;
+         border: 0;
+         font-size: 1.5rem;
+         background-color: transparent;
+         cursor: pointer;
+     }
+ 
+     .open-menu {
+         position: absolute;
+         right: 30px;
+         top: 30px;
+         color: #fff;
+     }
+ 
+     .close-menu {
+         color: #fff;
+     }
+ 
+     .nav {
+         opacity: 0;
+         visibility: hidden;
+ 
+         display: flex;
+         flex-direction: column;
+         align-items: end;
+         gap: 1rem;
+         position: absolute;
+         top: 0;
+         right: -100%;
+         bottom: 0;
+         background-color: #101010;
+         padding: 2rem;
+         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+         transition: right 0.1s;
+         color: #fff;
+     }
+ 
+ 
+     .nav.visible {
+         right: 0;
+         opacity: 1;
+         visibility: visible;
+     }
+ 
+     .nav-list {
+         flex-direction: column;
+         align-items: end;
+     }
+ 
+     .nav-list li a {
+         color: #fff;
+     }
+ 
+ /* Hero */
+ #hero {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     )
+     , url("https://media.tacdn.com/media/attractions-splice-spp-674x446/07/20/a5/f9.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #hero h1 {
+     color: #fff;
+ }
+ 
+ #heroC {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     )
+     , url("https://cnnespanol.cnn.com/wp-content/uploads/2019/03/190313164818-cordoba-argentina-alejandra-oraa-papa-francisco-historia-cultura-manzana-jesuitica-00010923-super-tease.jpg?quality=100&strip=info");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #heroC h1 {
+     color: #fff;
+ }
+ 
+ #heroS {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     )
+     , url("https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/euiaskeie1dzromidyvf");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #heroS h1 {
+     color: #fff;
+ }
+ 
+ #heroE {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     )
+     , url("https://www.fodors.com/wp-content/uploads/2018/08/HERO-BA-Instagrammable-Neighborhood-La-Boca-18.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #heroE h1 {
+     color: #fff;
+ }
+ 
+ #heroW {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     )
+     , url("https://www.argentina.gob.ar/sites/default/files/mendoza-jumbotron.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #heroW h1 {
+     color: #fff;
+ }
+ 
+ #heroN {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     )
+     , url("https://www.norte.com/img/2018/09/hornocal-2.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #heroN h1 {
+     color: #fff;
+ }
+ 
+ /* Center */
+ #explore-center .img-containerC {
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     ), url("https://hoydia.com.ar/wp-content/uploads/2022/01/Rios-de-Cordoba2.webp");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 400px;
+ }
+ 
+ #explore-center .container {
+     text-align: center;
+     padding: 200px 12px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #explore-center .textC {
+     width: 50%;
+     text-align: initial;
+     padding: 0px 30px;
+ }
+ 
+ /* South */
+ #explore-south .img-containerS {
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     ), url("https://media.staticontent.com/media/pictures/c71926b6-a531-4b0f-960b-a4927c9628cc");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 400px;
+ }
+ #explore-south {
+     background-color: #141617;
+     color: #fff;
+ }
+ 
+ #explore-south .container {
+     text-align: center;
+     padding: 200px 12px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #explore-south .textS {
+     width: 50%;
+     text-align: initial;
+     padding: 0px 30px;
+ }
+ 
+ /* East */
+ #explore-east .img-containerE {
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     ), url("https://buenosaires.gob.ar/sites/default/files/media/image/2014/07/09/4d362b7959aa9a5683a4fb46235684cfd41791b0.jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 400px;
+ }
+ #explore-east .container {
+     text-align: center;
+     padding: 200px 12px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #explore-east .textE {
+     width: 50%;
+     text-align: initial;
+     padding: 0px 30px;
+ }
+ /* West */
+ #explore-west .img-containerW {
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     ), url("https://www.clubandino.org/nueva/wp-content/uploads/2022/03/VEL2372.jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 400px;
+ }
+ #explore-west {
+     background-color: #141617;
+     color: #fff;
+ }
+ 
+ #explore-west .container {
+     text-align: center;
+     padding: 200px 12px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #explore-west .textW {
+     width: 50%;
+     text-align: initial;
+     padding: 0px 30px;
+ }
+ /* North */
+ #explore-north .img-containerN {
+     background-image: linear-gradient(
+         0deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5)
+     ), url("https://www.eluniversal.com.mx/resizer/cFBQsc2DQUER5zLqkr5Tz_5eQu0=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/3B327CUGNBAIPBB3CGUD4RJY6A.jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 400px;
+ }
+ #explore-north .container {
+     text-align: center;
+     padding: 200px 12px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #explore-north .textN {
+     width: 50%;
+     text-align: initial;
+     padding: 0px 30px;
+ }
+ 
+ /* Footer */
+ .footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: #141617;
+     color: #fff;
+     font-size: 8px;
+     text-align: right;
+     margin-top: 20px;
+ }
+ 
+ /* Slider Box */
+ #slider-box {
+     background-color: #141617;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+ 
+ #slider-box h1 {
+     margin-top: 30px;
+     margin-bottom: 30px;
+     color: #fff;
+     font-family: 'Merriweather', serif;
+     font-size: 2rem;
+ }
+ .slider-box {
+     width: 100%;
+     height: auto;
+     margin:  0 auto;
+     overflow: hidden;
+     max-width: 100%;
+ }
+ 
+ .slider-box ul {
+     display: flex;
+     padding: 0;
+     width: 800%;
+     animation: slide 25s infinite alternate ease-in-out;
+     margin: 0;
+ }
+ 
+ .slider-box li {
+     flex: 1;
+     list-style: none;
+     position: relative;
+     text-align: center;
+ }
+ 
+ .slider-box img {
+     max-width: 100%;
+     width: auto;
+     height: auto;
+     max-height: 70vh;
+ }
+ 
+ @keyframes slide {
+     0% { margin-left: 0; }
+     12.5% { margin-left: 0; }
+ 
+     18% { margin-left: -100%; }
+     25% { margin-left: -100%; }
+ 
+     30% { margin-left: -200%; }
+     37.5% { margin-left: -200%; }
+ 
+     45% { margin-left: -300%; }
+     50% { margin-left: -300%; }
+ 
+     55% { margin-left: -400%; }
+     62.5% { margin-left: -400%; }
+ 
+     68% { margin-left: -500%; }
+     75% { margin-left: -500%; }
+ 
+     80% { margin-left: -600%; }
+     87.5% { margin-left: -600%; }
+ 
+     91% { margin-left: -700%; }
+     100% { margin-left: -700%; }
+ 
+ }
+ 
+ @media (max-width: 991px) {
+     .slider-box {
+         width: 100%;
+     }
+ 
+     .slider-box img {
+         max-height: 50vh;
+     }
+ }
+ 
